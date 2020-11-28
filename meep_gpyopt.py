@@ -144,8 +144,8 @@ myBopt_meep = GPyOpt.methods.BayesianOptimization(f2,
 evaluation_history = []
 sensitivity = [0]
 
-max_iter = 10  # maximum time 40 iterations
-max_time = 60  # maximum time 60 seconds
+max_iter = 40  # maximum time 40 iterations
+max_time = 6000  # maximum time 60 seconds
 
 myBopt_meep.run_optimization(max_iter,max_time,verbosity=True)
 
